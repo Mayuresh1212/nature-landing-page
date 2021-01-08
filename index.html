@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="images/bg.jpg" class="bg" alt="">
+        <img src="images/bird.png" class="bird" alt="">
+        <div class="content">
+            <h2>We can Save The <br><span>Earth</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veniam ex iure harum eaque quo itaque minima in odit ea,
+                magnam totam cupiditate reprehenderit sit numquam recusandae 
+                dicta unde. Molestiae, quis.
+            </p>
+            <a href="#">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+        </ul>
+        <div class="text">
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Harum, tempore vel deserunt
+                </p>
+            </div>
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Harum, tempore vel deserunt
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("mousemove", function(slide){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + slide.pageX/100 + '%';
+            bg.style.height = 100 + slide.pageX/100 + '%';
+
+            bird.style.right = 100 + slide.pageX/2 + 'px';
+
+            content.style.left = 100 + slide.pageX/2.5 + 'px';
+        })
+    </script>
+    
+</body>
+</html>
